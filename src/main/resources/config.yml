@@ -1,0 +1,22 @@
+# TODO: Commentme
+
+permissions:
+  sign: 'signature.sign'
+  unsign: 'signature.unsign'
+
+messages:
+  prefix: '&8[&eSign&8] &7'
+  no_permission: '&cDu hast keine Rechte, um diesen Befehl zu nutzen.'
+  no_item_in_hand: '&cDu musst ein Item in deiner Hand halten, um es zu signieren!'
+  resign_not_allowed: '&cDu kannst dieses Item nicht nochmal signieren, da es bereits signiert wurde!'
+  successfully_signed: '&aDu hast das Item erfolgreich signiert!'
+  item_not_signed: '&cDieses Item ist nicht signiert!'
+  successfully_unsigned: '&aDu hast die Signatur von dem Item erfolgreich entfernt!'
+
+allow:
+  resign: true
+  unsign: true
+
+format:
+  - '&8\u25cf &7Signiert von &b%NAME%'
+  - '&8\u27a5 &7Am &e%DATUM% &7um &e%UHRZEIT%'
