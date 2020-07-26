@@ -31,5 +31,5 @@ And `/unsign` to revert it.
 If you find any bugs or want to contribute, just open an issue!
 We would appreciate it.
 
-> WeLoveOpenSourecPlugins :heart:
+> WeLoveOpenSourcePlugins :heart:
 
