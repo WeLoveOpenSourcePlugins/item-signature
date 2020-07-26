@@ -1,0 +1,31 @@
+# Rechte, die der Spieler haben muss, um die Aktion ausführen zu können.
+permissions:
+  # Signieren
+  sign: 'signature.sign'
+  # Signatur entfernen
+  unsign: 'signature.unsign'
+
+# Nachrichten, die dem Spieler geschickt werden.
+messages:
+  prefix: '&8[&eSign&8] &7'
+  no_permission: '&cDu hast keine Rechte, um diesen Befehl zu nutzen.'
+  no_item_in_hand: '&cDu musst ein Item in deiner Hand halten, um es zu signieren!'
+  resign_not_allowed: '&cDu kannst dieses Item nicht nochmal signieren, da es bereits signiert wurde!'
+  unsign_not_allowed: '&aDu kannst die Signatur nicht mehr entfernen!'
+  successfully_signed: '&aDu hast das Item erfolgreich signiert!'
+  item_not_signed: '&cDieses Item ist nicht signiert!'
+  successfully_unsigned: '&aDu hast die Signatur von dem Item erfolgreich entfernt!'
+
+# Aktiviere oder deaktiviere...
+allow:
+  # ... das Überschreiben einer Signatur.
+  resign: true
+  # ... das Entfernen einer Signatur.
+  unsign: true
+
+
+# Signatur des Items.
+# %NAME% ist der Name des Spielers, %DATUM% der aktuelle Tag und %UHRZEIT% die aktuelle Uhrzeit.
+format:
+  - '&8○ &7Signiert von &b%NAME%'
+  - '&8➥ &7Am &e%DATUM% &7um &e%UHRZEIT%'
