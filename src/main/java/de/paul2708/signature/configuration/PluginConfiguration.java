@@ -34,6 +34,10 @@ public final class PluginConfiguration {
         return translateColorCodes(configMessage);
     }
 
+    public boolean isAllowed(String key) {
+        return configuration.getBoolean("allow." + key);
+    }
+
     public List<String> getFormat() {
         return configuration.getStringList("format")
                 .stream()

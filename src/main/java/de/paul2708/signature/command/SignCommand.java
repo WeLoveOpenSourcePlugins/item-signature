@@ -26,6 +26,14 @@ public class SignCommand extends AbstractCommand {
             player.sendMessage(configuration.getMessage("no_item_in_hand"));
             return;
         }
+        if (!configuration.isAllowed("resign")) {
+            player.sendMessage(configuration.getMessage("resign_not_allowed"));
+            return;
+        }
+
+        if (signer.isSigned(item)) {
+            signer.unsign(item);
+        }
 
         signer.sign(player, item);
         player.sendMessage(configuration.getMessage("successfully_signed"));
