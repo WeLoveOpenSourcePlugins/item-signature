@@ -9,7 +9,7 @@ It is an open-source clone of the [SignPlugin by DeinPlugin.net](https://deinplu
 - free to use and open-source
 
 ## Plugin setup
-Download the latest plugin release [here](...) and put the jar into `plugins/`.
+Download the latest plugin release [here](https://github.com/WeLoveOpenSourcePlugins/item-signature/releases) and put the jar into `plugins/`.
 Reload or restart the server.
 
 If you want to, you can configure the plugin by editing the configuration file `config.yml` in `plugins/Item-Signature/`.
