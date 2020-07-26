@@ -27,7 +27,7 @@ public class SignCommand extends AbstractCommand {
             return;
         }
 
-        signer.sign(item);
+        signer.sign(player, item);
         player.sendMessage(configuration.getMessage("successfully_signed"));
     }
 }
