@@ -7,3 +7,4 @@ main: 'de.paul2708.signature.SignaturePlugin'
 api-version: '1.16'
 commands:
   sign:
+  unsign:
