@@ -28,7 +28,7 @@ And `/unsign` to revert it.
 3. Run `mvn clean package`.
 
 ## Contribute
-If you found any bugs or want to contribute, just open an issue!
+If you find any bugs or want to contribute, just open an issue!
 We would appreciate it.
 
 > WeLoveOpenSourecPlugins :heart:
