@@ -5,6 +5,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public final class PluginConfiguration {
 
@@ -29,6 +31,17 @@ public final class PluginConfiguration {
 
     public String getMessage(String key) {
         String configMessage = configuration.getString("messages.prefix") + configuration.getString("messages." + key);
-        return ChatColor.translateAlternateColorCodes('&', configMessage);
+        return translateColorCodes(configMessage);
+    }
+
+    public List<String> getFormat() {
+        return configuration.getStringList("format")
+                .stream()
+                .map(this::translateColorCodes)
+                .collect(Collectors.toUnmodifiableList());
+    }
+
+    private String translateColorCodes(String msg) {
+        return ChatColor.translateAlternateColorCodes('&', msg);
     }
 }
