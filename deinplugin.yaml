@@ -1,0 +1,32 @@
+specVersion: 1
+type: plugin
+name:
+  de: Vier Gewinnt
+  en: Connect Four
+authors:
+  - Paul2708
+supportedPlatforms:
+  - spigot
+supportedGameVersions: ^1.16
+category: misc
+introduction:
+  de: Ein Plugin zum Signieren von Items
+  en: A plugin for signing items
+description:
+  de: |
+    Ein Item wird über den Befehl `/sign` signiert.
+    Die Signierung kann über `/unsign` wieder rückgängig gemacht werden.
+  en: |
+    An item is signed using the `/sign` command.
+    The signing can be undone with `/unsign`.
+installation:
+  de: |
+    - Herunterladen der Plugin-Datei
+    - Ablegen der Datei im Plugins-Ordner
+    - Anpassen der Nachrichten in der `config.yml`-Datei
+    - Server neustarten
+  en: |
+    - Put the memory.jar in your plugin folder
+    - Start the server and wait until the message file got created
+    - Customize the messages using the `config.yml`-file
+    - Restart your server and connect
