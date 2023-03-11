@@ -2,7 +2,7 @@ name: 'Item-Signature'
 description: 'Let me sign your item.'
 author: 'Paul2708'
 website: 'https://github.com/WeLoveOpenSourcePlugins/item-signature'
-version: '0.0.1'
+version: '1.1.0'
 main: 'de.paul2708.signature.SignaturePlugin'
 api-version: '1.16'
 commands:
